@@ -1,6 +1,6 @@
 # Ecommerce-Sales-Data-Warehouse-2026
 End-to-end e-commerce analytics using Google BigQuery (SQL) and Tableau for profitability insights.
-# E-commerce Sales & Profitability Data Warehouse
+## E-commerce Sales & Profitability Data Warehouse
 **Tools:** Google BigQuery (SQL) | Tableau Public | Cloud Data Engineering
 
 ## Business Problem
