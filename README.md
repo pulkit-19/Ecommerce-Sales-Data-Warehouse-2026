@@ -1,22 +1,164 @@
 # Ecommerce-Sales-Data-Warehouse-2026
-End-to-end e-commerce analytics using Google BigQuery (SQL) and Tableau for profitability insights.
-## E-commerce Sales & Profitability Data Warehouse
-**Tools:** Google BigQuery (SQL) | Tableau Public | Cloud Data Engineering
+## Project Overview
+
+This project builds a data warehouse solution for an e-commerce dataset using Google BigQuery and SQL. The warehouse enables efficient analysis of sales, profitability, and regional performance.
+
+An interactive Tableau dashboard was created to visualize key business metrics and support data-driven decision-making.
 
 ## Business Problem
-As an e-commerce analyst, the goal was to identify "Profit Drainers"—regions or product categories where high sales volume did not translate into actual profit due to logistics or discount inefficiencies.
 
-## The Solution
-1. **Data Warehousing:** Orchestrated a cloud environment in **Google BigQuery** to host 10,000+ rows of raw transaction data.
-2. **SQL Transformation:** Developed SQL Views to standardize schemas, clean formatting errors (removing spaces in headers), and calculate **Profit Margin %**.
-3. **BI Visualization:** Designed an interactive **Tableau Executive Dashboard** to allow stakeholders to drill down into regional performance.
+E-commerce companies generate large volumes of transactional data. Without structured storage and analytics, it becomes difficult to track:
 
-## Key Insights
-* **Logistics Impact:** Identified that "Tables" in the Central region were consistently unprofitable due to shipping costs.
-* **Top Performers:** California and New York drive 40% of total profit, suggesting optimized warehouse placement.
+* Sales performance
 
-## Project Links
-* **[View Interactive Tableau Dashboard](https://public.tableau.com/views/E-commerce_Global_Sales_Analytics_2026/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) **
-* **[View SQL Cleaning Script](https://github.com/pulkit-19/Ecommerce-Sales-Data-Warehouse-2026/commit/ece2a5ecff046cbd59179e64e5c938611463d4d4#diff-3c9c98db10c56d774fc9308e09c84053d84f27cf96fcec34d90643f41bebe1fe) **
+* Product profitability
+
+* Regional trends
+
+This project demonstrates how a data warehouse architecture can enable scalable analytics and KPI reporting.
+
+## Dataset
+
+The dataset contains e-commerce sales transactions including:
+
+* Order ID
+
+* Customer ID
+
+* Product category
+
+* Sales
+
+* Profit
+
+* Region
+
+* Order date
+
+Total Records: 10,000+
+
+## Tools & Technologies Used
+
+### Database
+
+* Google BigQuery
+
+### Query Language
+
+* SQL
+
+### Visualization
+
+* Tableau
+
+### Other Tools
+
+* GitHub
+
+* Excel
+
+## Data Warehouse Architecture
+
+The warehouse follows a star schema design consisting of:
+
+### Fact Table
+
+Sales
+
+### Dimension Tables
+
+* Customers
+
+* Products
+
+* Region
+
+* Date
+
+This structure improves query performance and simplifies analytical reporting.
+
+## Project Workflow
+### 1 Data Loading
+
+Imported raw e-commerce dataset into Google BigQuery.
+
+### 2 Data Modeling
+
+Designed a star schema with fact and dimension tables.
+
+### 3 SQL Transformation
+
+Created SQL queries and views to calculate key metrics.
+
+### 4 KPI Automation
+
+Automated calculations for revenue, profit margin, and category performance.
+
+### 5 Dashboard Development
+
+Built an interactive Tableau dashboard for business insights.
+
+## Key SQL Analysis
+
+Examples of queries used:
+
+* Revenue by category
+
+* Profit margin analysis
+
+* Regional sales performance
+
+* Top performing products
+
+## Dashboard Insights
+
+The Tableau dashboard highlights:
+
+* Total revenue
+
+* Profit margin
+
+* Category performance
+
+* Regional sales distribution
+
+* Top profitable products
 
 <img width="1365" height="767" alt="Dashboard 2" src="https://github.com/user-attachments/assets/cdbfb094-9dbd-45f8-ad57-c8a50ed17352" />
+
+## Key Insights
+
+* Some product categories generate high revenue but low profit margins.
+
+* Regional performance varies significantly across markets.
+
+* Identifying low-margin categories helps businesses optimize pricing and inventory strategy.
+
+## How to Use This Project
+
+1 Clone the repository
+
+git clone https://github.com/pulkit-19/Ecommerce-Sales-Data-Warehouse-2026.git
+
+2 Open SQL scripts in BigQuery.
+
+3 Explore Tableau dashboard for insights.
+
+## Future Improvements
+
+* Implement ETL pipeline using Python
+
+* Add automated data refresh
+
+* Deploy dashboard for real-time analytics
+
+## Author
+
+Pulkit Sharma
+Data Analytics Student | SQL | Python | Data Visualization
+
+LinkedIn:
+www.linkedin.com/in/pulkit-sharma19
+
+GitHub:
+https://github.com/pulkit-19
